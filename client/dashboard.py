@@ -764,19 +764,19 @@ def purchase_page(user):
                                     ])
                                 
                                 st.success("✅ Purchase successful! Thank you for shopping with us! 🎉")
-                                # # st.balloons()
+                                st.balloons()
                                 # st.snow()
-                                # time.sleep(2)
-                                # Replace your current balloons code with:
-                                try:
-                                    st.balloons()
-                                    time.sleep(3)  # Give time to see the balloons
-                                except Exception as e:
-                                    st.snow()  # Fallback effect
-                                    print(f"Balloon animation failed: {e}")
+                                time.sleep(2)
+                              
+                                # try:
+                                #     st.balloons()
+                                #     time.sleep(3)  # Give time to see the balloons
+                                # except Exception as e:
+                                #     st.snow()  # Fallback effect
+                                #     print(f"Balloon animation failed: {e}")
                                 st.rerun()
-            else:
-                st.error(f"❌ {name} is currently out of stock!")
+            # else:
+            #     st.error(f"❌ {name} is currently out of stock!")
     
     st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
