@@ -764,9 +764,9 @@ def purchase_page(user):
                                     ])
                                 
                                 st.success("✅ Purchase successful! Thank you for shopping with us! 🎉")
-                                st.balloons()
-                                time.sleep(0.5)
-                                # st.toast("🎉 Purchase done!")
+                                # st.balloons()
+                                st.snow()
+                                time.sleep(2)
                                 st.rerun()
             else:
                 st.error(f"❌ {name} is currently out of stock!")
